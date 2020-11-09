@@ -40,7 +40,7 @@ public class AudioQueue : MonoBehaviour
             {
                 if (!isPlaying && clipCreated)
                 {
-                    PlayClip(clipFloat);
+                    PlayClip(audioQueue.Peek());
                 }
             });
         }
@@ -50,12 +50,8 @@ public class AudioQueue : MonoBehaviour
     {
         audioFrameClip.SetData(clipFloat, 0);
         audioSource.Play();
-     
-        if (audioQueue.Count >= queueMax)
-        {
-            audioQueue.Dequeue();
-        }
-
+        audioQueue.Dequeue();
+   
     }
 
     public static float[] PCM2Floats(byte[] bytes)
