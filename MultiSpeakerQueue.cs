@@ -18,20 +18,6 @@ public class MultiSpeakerQueue : MonoBehaviour
 
     #region AudioClips
 
-    //Create audioclip names
-    public AudioClip clip1;
-    public AudioClip clip2;
-    public AudioClip clip3;
-    public AudioClip clip4;
-    public AudioClip clip5;
-    public AudioClip clip6;
-    public AudioClip clip7;
-    public AudioClip clip8;
-    public AudioClip clip9;
-    public AudioClip clip10;
-
-    #endregion
-
     public AudioClip[] clipArray;
 
     //to switch between audiosources
@@ -47,17 +33,6 @@ public class MultiSpeakerQueue : MonoBehaviour
         }
 
         #region clips
-        clip1 = AudioClip.Create("_clip1", samplesPerCall, 2, sampleRate, false);
-        clip2 = AudioClip.Create("_clip2", samplesPerCall, 2, sampleRate, false);
-        clip3 = AudioClip.Create("_clip3", samplesPerCall, 2, sampleRate, false);
-        clip4 = AudioClip.Create("_clip4", samplesPerCall, 2, sampleRate, false);
-        clip5 = AudioClip.Create("_clip5", samplesPerCall, 2, sampleRate, false);
-        clip6 = AudioClip.Create("_clip6", samplesPerCall, 2, sampleRate, false);
-        clip7 = AudioClip.Create("_clip7", samplesPerCall, 2, sampleRate, false);
-        clip8 = AudioClip.Create("_clip8", samplesPerCall, 2, sampleRate, false);
-        clip9 = AudioClip.Create("_clip9", samplesPerCall, 2, sampleRate, false);
-        clip10 = AudioClip.Create("_clip10", samplesPerCall, 2, sampleRate, false);
-        #endregion
 
         clipArray = new AudioClip[] { clip1, clip2, clip3, clip4, clip5, clip6, clip7, clip8, clip9, clip10 };
 
